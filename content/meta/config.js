@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "April Leonard", // <title>
   shortSiteTitle: "April Leonard", // <title> ending for posts and pages
-  siteDescription: "Atte Juvonen",
+  siteDescription: "April Leonard, Engineering Leader",
   siteUrl: "https://www.aprilleonard.me",
   // pathPrefix: "",
   siteImage: "preview.jpg",
