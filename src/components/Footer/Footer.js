@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const Footer = props => {
   const { theme } = props;
-  const buildTime = useStaticQuery(query).site.buildTime
+  const buildTime = useStaticQuery(query).site.buildTime;
 
   return (
     <React.Fragment>
@@ -12,8 +12,7 @@ const Footer = props => {
         <a href="https://www.github.com/baobabKoodaa/blog/">
           This blog is open source. Last updated {buildTime}.
         </a>
-        
-      </footer> 
+      </footer>
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -42,7 +41,7 @@ export default Footer;
 const query = graphql`
   query Info {
     site {
-      buildTime(formatString: "DD.MM.YYYY HH:mm")
+      buildTime(formatString: "YYYY-MM-DD HH:mm")
     }
   }
-`
+`;

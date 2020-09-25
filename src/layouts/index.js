@@ -113,7 +113,6 @@ class Layout extends React.Component {
               margin: 0;
             }
             strong {
-              font-family: "Open Sans", "Arial", "sans-serif";
               font-weight: 600;
             }
             a {
