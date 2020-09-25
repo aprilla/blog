@@ -6,7 +6,7 @@ title: About
 
 Hi, I'm April Leonard (she/her) based in Portland, OR.
 
-<h2>By day</h2>
+## By day
 Mom of two kiddos and a puppy with velcro tendencies.
 
 A Staff Engineering Manager at GitHub working on bringing Codespaces, your instant dev environment, to developers everywhere.
