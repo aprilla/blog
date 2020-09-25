@@ -11,7 +11,7 @@ Mom of two kiddos and a puppy with velcro tendencies.
 A Staff Engineering Manager at GitHub working on bringing Codespaces, your instant dev environment, to developers everywhere.
 
 ## By copious spare time
-Leader of the [Humanizing Tech podcast](https://www.pdxwit.org/podcast), surfacing __real__ lived experiences of people in the tech industry and actions you can take to get involved and help make tech a more equitable place for everyone.
+Leader of the [Humanizing Tech podcast](https://www.pdxwit.org/podcast), surfacing ***real*** lived experiences of people in the tech industry and actions you can take to get involved and help make tech a more equitable place for everyone.
 
 ## Backstory
 I grew up an athlete of the ballet variety, and once I figured out the toll it would take on my body long-term I opted to become a singer instead. I went to University as a vocal performance major expecting to be a choral conductor and took a slight jog towards math before graduating with a degree in Computer Science. My career started with manual testing to Java engineering and then leading and managing teams. At the end of the day, I love people and puzzles.
