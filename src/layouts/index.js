@@ -73,6 +73,7 @@ class Layout extends React.Component {
           <style jsx global>{`
             html {
               box-sizing: border-box;
+              background: #f4f4f1;
             }
             html,
             body {

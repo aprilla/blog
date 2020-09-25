@@ -35,25 +35,15 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <header className={`header ${this.getHeaderSize()}`}>
-          <Link to="/about" className="logoType">
-            <div className="logo">
-              <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
-            </div>
+          <Link to="/" className="logoType">
             <div className="type">
               <h1>{config.headerTitle}</h1>
               <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
-            <ScreenWidthContext.Consumer>
-              {width => (
-                <Menu
-                  path={path}
-                  fixed={fixed}
-                  screenWidth={width}
-                  theme={theme}
-                />
-              )}
-            </ScreenWidthContext.Consumer>
+          <ScreenWidthContext.Consumer>
+            {width => <Menu path={path} fixed={fixed} screenWidth={width} theme={theme} />}
+          </ScreenWidthContext.Consumer>
         </header>
         <VisibilitySensor onChange={this.visibilitySensorChange}>
           <div className="sensor" />
@@ -174,11 +164,11 @@ class Header extends React.Component {
               width: 100%;
               justify-content: space-between;
               transition: padding 0.5s;
-              border-bottom: 2px solid ${theme.color.menu.border};
+              box-shadow: 0px 4px 1px ${theme.color.brand.primary};
 
               &.fixed {
                 height: ${theme.header.height.fixed};
-                background-color: ${theme.color.neutral.white};
+                background-color: #f4f4f1;
                 left: 0;
                 padding: 0 ${theme.space.m};
                 position: fixed;
