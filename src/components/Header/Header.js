@@ -35,25 +35,15 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <header className={`header ${this.getHeaderSize()}`}>
-          <Link to="/about" className="logoType">
-            <div className="logo">
-              <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
-            </div>
+          <Link to="/" className="logoType">
             <div className="type">
               <h1>{config.headerTitle}</h1>
               <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
-            <ScreenWidthContext.Consumer>
-              {width => (
-                <Menu
-                  path={path}
-                  fixed={fixed}
-                  screenWidth={width}
-                  theme={theme}
-                />
-              )}
-            </ScreenWidthContext.Consumer>
+          <ScreenWidthContext.Consumer>
+            {width => <Menu path={path} fixed={fixed} screenWidth={width} theme={theme} />}
+          </ScreenWidthContext.Consumer>
         </header>
         <VisibilitySensor onChange={this.visibilitySensorChange}>
           <div className="sensor" />
@@ -65,7 +55,7 @@ class Header extends React.Component {
             padding-bottom: 0px !important;
             align-items: center;
             justify-content: center;
-            background-color: ${theme.color.neutral.white};
+            background-color: #f4f4f1;
             display: flex;
             height: ${theme.header.height.default};
             position: relative;
@@ -106,7 +96,7 @@ class Header extends React.Component {
 
           .logo {
             border-radius: ${theme.size.radius.small};
-            border: 1px solid #eee;
+
             display: inline-block;
             height: 44px;
             margin: ${theme.space.inline.default};
@@ -137,7 +127,7 @@ class Header extends React.Component {
 
           @from-width tablet {
             .header {
-              padding: ${theme.space.inset.l};
+              padding: 0 ${theme.space.inset.l} ${theme.space.inset.l};
 
               &.homepage {
                 height: ${theme.header.height.homepage};
@@ -167,18 +157,18 @@ class Header extends React.Component {
           @from-width desktop {
             .header {
               align-items: center;
-              background-color: ${theme.color.neutral.white};
+              background-color: #f4f4f1;
               display: flex;
               position: absolute;
               top: 0;
               width: 100%;
               justify-content: space-between;
               transition: padding 0.5s;
-              border-bottom: 2px solid ${theme.color.menu.border};
+              box-shadow: 0px 4px 1px ${theme.color.brand.primary};
 
               &.fixed {
                 height: ${theme.header.height.fixed};
-                background-color: ${theme.color.neutral.white};
+                background-color: #f4f4f1;
                 left: 0;
                 padding: 0 ${theme.space.m};
                 position: fixed;

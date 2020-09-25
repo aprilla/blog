@@ -73,6 +73,7 @@ class Layout extends React.Component {
           <style jsx global>{`
             html {
               box-sizing: border-box;
+              background: #f4f4f1;
             }
             html,
             body {
@@ -94,6 +95,7 @@ class Layout extends React.Component {
             body {
               font-family: Georgia, serif;
               font-weight: 400;
+              line-height: 1.6;
             }
             h1,
             h2,
@@ -101,11 +103,11 @@ class Layout extends React.Component {
               font-weight: 600;
               font-family: Georgia, serif;
               line-height: 1.1;
-              letter-spacing: -0.03em;
+              letter-spacing: 0.03em;
               margin: 0;
             }
             h1 {
-              letter-spacing: -0.04em;
+              letter-spacing: 0.01em;
             }
             p {
               margin: 0;
