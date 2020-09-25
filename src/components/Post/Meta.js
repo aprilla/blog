@@ -6,31 +6,26 @@ import { FaUser, FaTag, FaCalendar } from "react-icons/fa/";
 
 const Meta = props => {
   const { author: authorName, tags, theme, lastEdit } = props;
-  const prefix = props.prefix || currDate() /* Intent: get date placeholder for viewing drafts. */
-  
+  const prefix = props.prefix || currDate(); /* Intent: get date placeholder for viewing drafts. */
+
   //TODO: lastEdit
 
   return (
     <p className="meta">
-      <span>
-        <FaCalendar size={18} /> {prefix}
-      </span>
+      <span>{prefix}</span>
 
       {/* <span>
         <FaUser size={18} /> {authorName}
       </span> */}
 
-      {tags && tags.map(tag => 
-        <span key={tag}>
-          
-          <Link to={`/tag/${tag.split(" ").join("-")}`}>
-            <span>
-              <FaTag size={18} />
-              {tag}
-            </span>
-          </Link>
-        </span>
-      )}
+      {tags &&
+        tags.map(tag => (
+          <span key={tag}>
+            <Link to={`/tag/${tag.split(" ").join("-")}`}>
+              <span>{tag}</span>
+            </Link>
+          </span>
+        ))}
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -49,7 +44,7 @@ const Meta = props => {
           span {
             align-items: center;
             display: flex;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
           }
         }

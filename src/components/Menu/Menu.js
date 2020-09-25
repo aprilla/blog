@@ -13,7 +13,7 @@ class Menu extends React.Component {
     this.itemList = React.createRef();
 
     this.items = [
-      { to: "/", label: "Home", icon: FaHome },
+      { to: "/", label: "Blog", icon: FaHome },
       { to: "/tags/", label: "Tags", icon: FaTag },
       //{ to: "/search/", label: "Search", icon: FaSearch },
       { to: "/follow/", label: "Follow", icon: FaRss },
@@ -152,7 +152,6 @@ class Menu extends React.Component {
         <style jsx>{`
           .menu {
             align-items: center;
-            background: ${theme.color.neutral.white};
             top: 0;
             display: flex;
             flex-grow: 1;
@@ -179,8 +178,8 @@ class Menu extends React.Component {
 
           @below desktop {
             .menu {
-              border-bottom: 2px solid ${theme.color.menu.border};
-
+              background-color: #f4f4f1;
+              box-shadow: 0px 4px 1px ${theme.color.brand.primary};
               &::after {
                 position: absolute;
                 content: "";
@@ -246,7 +245,6 @@ class Menu extends React.Component {
               }
 
               :global(.homepage):not(.fixed) & {
-                border: 1px solid transparent;
                 background: color(white alpha(-10%));
                 top: 50px;
 

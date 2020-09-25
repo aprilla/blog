@@ -55,7 +55,7 @@ class Header extends React.Component {
             padding-bottom: 0px !important;
             align-items: center;
             justify-content: center;
-            background-color: ${theme.color.neutral.white};
+            background-color: #f4f4f1;
             display: flex;
             height: ${theme.header.height.default};
             position: relative;
@@ -96,7 +96,7 @@ class Header extends React.Component {
 
           .logo {
             border-radius: ${theme.size.radius.small};
-            border: 1px solid #eee;
+
             display: inline-block;
             height: 44px;
             margin: ${theme.space.inline.default};
@@ -127,7 +127,7 @@ class Header extends React.Component {
 
           @from-width tablet {
             .header {
-              padding: ${theme.space.inset.l};
+              padding: 0 ${theme.space.inset.l} ${theme.space.inset.l};
 
               &.homepage {
                 height: ${theme.header.height.homepage};
@@ -157,7 +157,7 @@ class Header extends React.Component {
           @from-width desktop {
             .header {
               align-items: center;
-              background-color: ${theme.color.neutral.white};
+              background-color: #f4f4f1;
               display: flex;
               position: absolute;
               top: 0;

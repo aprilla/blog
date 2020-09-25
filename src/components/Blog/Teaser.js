@@ -30,23 +30,22 @@ const Teaser = props => {
       <li>
         <Link to={slug} key={slug} className="link">
           <div className="gatsby-image-outer-wrapper">
-            <Picture fluid={fluid} critical={index==0}/>
+            <Picture fluid={fluid} critical={index == 0} />
           </div>
           <h1>
             {title} <FaArrowRight className="arrow" />
           </h1>
           <p className="meta">
             <span>
-              <FaCalendar size={18} /> {prefix}
+              {prefix}
+              {tags && tags.length > 0 && <span>&nbsp;&bull;&nbsp;</span>}
             </span>
-            {/* <span>
-              <FaUser size={18} /> {author}
-            </span> */}
-            {tags && tags.map(tag =>
-              <span key={tag}>
-              <FaTag size={18} /> {tag}
-              </span>
-            )}
+            {tags &&
+              tags.map(tag => (
+                <span className="meta--commas" key={tag}>
+                  {tag}
+                </span>
+              ))}
           </p>
           <p>{excerpt}</p>
         </Link>
@@ -60,29 +59,24 @@ const Teaser = props => {
         }
 
         li {
-          border: 1px solid transparent;
-          border-radius: ${theme.size.radius.default};
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
           margin: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 3)`};
           padding: ${theme.space.inset.s};
           position: relative;
           transition: all ${theme.time.duration.default};
-          background: transparent;
+          background-color: #fff;
 
           :global(.gatsby-image-outer-wrapper) {
             border-radius: ${theme.size.radius.default};
-            border: 1px solid ${theme.line.color};
             overflow: hidden;
-          }
-          :global(.gatsby-image-outer-wrapper img) {
-            z-index: -1;
           }
 
           &::after {
-            border-top: 1px solid ${theme.line.color};
+            border-top: 1px solid ${theme.color.brand.primary};
             content: "";
             height: 0;
             position: absolute;
-            bottom: ${`calc(${theme.space.default} * -1.5)`};
+            bottom: ${`calc(${theme.space.default} * -2.5)`};
             left: 50%;
             transform: translateX(-50%);
             transition: all ${theme.time.duration.default};
@@ -99,7 +93,7 @@ const Teaser = props => {
           line-height: ${theme.blog.h1.lineHeight};
           font-size: ${theme.blog.h1.size};
           text-remove-gap: both;
-
+          color: ${theme.color.brand.primaryDark};
           :global(.arrow) {
             display: none;
             position: relative;
@@ -110,19 +104,32 @@ const Teaser = props => {
         .meta {
           display: flex;
           flex-flow: row wrap;
-          font-size: 0.8em;
+          font-size: 1em;
           padding: ${theme.space.m} ${theme.space.s};
           background: transparent;
+          color: ${theme.color.neutral.gray.f};
 
           :global(svg) {
             fill: ${theme.icon.color};
             margin: ${theme.space.inline.xs};
           }
-          span {
+          > span {
             align-items: center;
             display: flex;
-            text-transform: uppercase;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
+            text-transform: capitalize;
+            margin: ${theme.space.xs} 5px ${theme.space.xs} 0;
+            span {
+              margin-left: 5px;
+            }
+            &.meta--commas {
+              &:after {
+                content: ",";
+              }
+              margin-right: 5px;
+              &:last-of-type:after {
+                display: none;
+              }
+            }
           }
         }
 
@@ -130,6 +137,7 @@ const Teaser = props => {
           line-height: 1.5;
           padding: 0 ${theme.space.s};
           text-remove-gap: both;
+          font-size: 1.2em;
         }
 
         @from-width tablet {
@@ -163,10 +171,10 @@ const Teaser = props => {
         @below desktop {
           li {
             border: 1px solid ${theme.line.color};
-            box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
             margin-bottom: 20px;
-            
+
             &:first-child {
               margin-top: 0;
             }
@@ -208,17 +216,13 @@ const Teaser = props => {
           }
           li {
             &:hover {
-              border: 1px solid ${theme.line.color};
-              box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
+              box-shadow: 0 5px 16px 3px rgba(0, 0, 0, 0.1);
 
-              &:after {
-                bottom: ${`calc(${theme.space.default} * -2.5)`};
-              }
               :global(.gatsby-image-wrapper) {
-                transform: scale(1.1);
+                transform: scale(1);
               }
               h1 {
-                color: ${theme.blog.h1.hoverColor};
+                color: ${theme.color.brand.primary};
               }
               :global(.arrow) {
                 opacity: 1;
