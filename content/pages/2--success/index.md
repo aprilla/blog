@@ -2,4 +2,4 @@
 title: Delivered
 ---
 
-Thanks for reaching out. Your message is safely in my inbox. <br />
+Thanks for reaching out. I look forward to learning more about you and how we might work together! <br />
