@@ -1,7 +1,7 @@
 {
-  "name": "@baobabkoodaa/blog",
+  "name": "@aprilla/blog",
   "version": "0.9.0",
-  "author": "Baobab Koodaa",
+  "author": "April Leonard",
   "description": "Feature-rich blog with streamlined design.",
   "license": "MIT",
   "dependencies": {
