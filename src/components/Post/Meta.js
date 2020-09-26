@@ -12,18 +12,14 @@ const Meta = props => {
 
   return (
     <p className="meta">
-      <span>{prefix}</span>
-
-      {/* <span>
-        <FaUser size={18} /> {authorName}
-      </span> */}
-
+      <span>
+        {prefix}
+        {tags && tags.length > 0 && <span>&nbsp;&bull;&nbsp;</span>}
+      </span>
       {tags &&
         tags.map(tag => (
-          <span key={tag}>
-            <Link to={`/tag/${tag.split(" ").join("-")}`}>
-              <span>{tag}</span>
-            </Link>
+          <span className="meta--commas" key={tag}>
+            {tag}
           </span>
         ))}
 
@@ -45,7 +41,19 @@ const Meta = props => {
             align-items: center;
             display: flex;
             text-transform: capitalize;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
+            margin: ${theme.space.xs} 5px ${theme.space.xs} 0;
+            span {
+              margin-left: 5px;
+            }
+            &.meta--commas {
+              &:after {
+                content: ",";
+              }
+              margin-right: 5px;
+              &:last-of-type:after {
+                display: none;
+              }
+            }
           }
         }
         @from-width tablet {
