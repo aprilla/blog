@@ -16,7 +16,7 @@ There are countless [articles](https://www.gallup.com/workplace/231593/why-great
 
 As an early career manager, I consumed books and information on how to turn each of these words and ideas to action. Understanding each skill with depth most certainly made me a better manager, but when you’re juggling [#allthethings](https://twitter.com/GretchenTG/status/1305974239984484353) it can be tough to know where to put your focus. What’s top of mind today or this week? Do I need to be empowering the team? Coaching? Communicating? Reinforcing the vision? Collaborating with my peers? Creating an inclusive environment?
 
-I started to notice that my greatest mentors provided me with communication keys – analogies or metaphors that helped unlock the important aspects of these skills in a profound and memorable way. Turning these words into ideas helped me know where to focus my energy or employ one of these skills with my team members. I found myself developing my own set of communication shortcuts and sharing them with my team and the managers I coached.
+I started to notice that my greatest mentors provided me with communication keys – imagery that helped unlock the important aspects of these skills in a profound and memorable way. Often times they reinfoced multiple great management measures simultaneously. Turning these words into ideas seemed helped me focus, yet still accomplish multiple skills. I found myself developing my own set of communication keys and sharing them with my team and the managers I coached.
 
 <re-img
     src="target@2x.png"
