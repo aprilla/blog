@@ -4,7 +4,7 @@ module.exports = {
   siteDescription: "April Leonard, Engineering Leader",
   siteUrl: "https://www.aprilleonard.me",
   // pathPrefix: "",
-  siteImage: "preview.jpg",
+  siteImage: "preview.png",
   siteLanguage: "en",
 
   /* author */
