@@ -8,7 +8,6 @@ author: April Leonard
 <re-img
     src="keys@2x.png"
     title="keys"
-    href="keys@2x.png"
     >
 </re-img>
 
@@ -21,7 +20,8 @@ I started to notice that my greatest mentors provided me with communication keys
 <re-img
     src="target@2x.png"
     title="target"
-    href="target@2x.png"
+    center="true"
+    maxwidth=275px
     >
 </re-img>
 
@@ -32,7 +32,8 @@ One of my first truly awesome mentors was [Rebecca Campbell](https://twitter.com
 <re-img
     src="dial@2x.png"
     title="dial"
-    href="dial@2x.png"
+    center="true"
+    maxwidth="275px"
     >
 </re-img>
 
@@ -45,7 +46,8 @@ The important visual here is sharing a dial with your team member. I often use 1
 <re-img
     src="map@2x.png"
     title="map"
-    href="map@2x.png"
+    center="true"
+    maxwidth="275px"
     >
 </re-img>
 
@@ -56,7 +58,8 @@ Along with the dial, a map can be helpful. How much of the “map” (or archite
 <re-img
     src="lotus@2x.png"
     title="lotus"
-    href="lotus@2x.png"
+    center="true"
+    maxwidth="275px"
     >
 </re-img>
 
@@ -69,7 +72,8 @@ My instructors had us focus on one area of improvement for each exercise that wa
 <re-img
     src="buoy@2x.png"
     title="buoy"
-    href="buoy@2x.png"
+    center="true"
+    maxwidth="275px"
     >
 </re-img>
 
@@ -80,7 +84,8 @@ I had a panic attack once in my life at the beginning of a triathlon that starte
 <re-img
     src="oblong-leader@2x.png"
     title="oblong-leader"
-    href="oblong-leader@2x.png"
+    center="true"
+    maxwidth="275px"
     >
 </re-img>
 
@@ -90,4 +95,4 @@ I tried to figure out where this one came from, but I’ve so far failed in Inte
 
 I hope these images help you focus, communicate, and grow yourself and your teams as much as they’ve helped me. I’d love to hear more about what images help you. Let’s continue the conversation! @ me on Twitter [@aprilla](https://twitter.com/aprilla).
 
-_Special thanks to these talented folks: Alan Leonard for the illustrations, Miriam Rowley and Rebecca Campbell for their ideas and edits._
+_Special thanks to these talented folks: Alan Leonard for the illustrations, Miriam Rowley and Rebecca Campbell for their expertise and edits._
